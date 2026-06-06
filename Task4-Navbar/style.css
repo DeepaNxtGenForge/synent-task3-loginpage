@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F5F7FA;
+}
+
+/* NAVBAR */
+nav{
+    background:#0A192F;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+/* LOGO */
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* RIGHT SIDE WRAPPER (MENU + ICON TOGETHER) */
+.nav-container{
+    display:flex;
+    align-items:center;
+    gap:15px;   /* 👈 small gap between menu and icon */
+}
+
+/* MENU LINKS */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;   /* nice spacing between items */
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+.nav-links a:hover{
+    color:#64FFDA;
+}
+
+/* ICON */
+.menu-icon{
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    margin-top:120px;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#0A192F;
+        flex-direction:column;
+        width:200px;
+        padding:10px;
+        gap:0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+}
